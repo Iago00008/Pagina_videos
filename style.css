@@ -135,16 +135,6 @@ footer p {
     cursor: pointer;
 }
 
-/* Efeito de Fade no botão do segundo vídeo */
-.fade-button {
-    opacity: 1;
-    transition: opacity 0.5s ease-in-out;
-}
-
-.fade-button:hover {
-    opacity: 0.5; /* Efeito de fade ao passar o mouse */
-}
-
 /* Responsividade */
 @media (max-width: 768px) {
     header h1 {
@@ -160,4 +150,18 @@ footer p {
         width: 80%;
         height: 80%;
     }
+}
+
+/* Quadrado com animação */
+.quadrado {
+    width: 100px; /* Largura do quadrado */
+    height: 100px; /* Altura do quadrado */
+    background-color: #28a745; /* Cor de fundo verde */
+    transition: transform 0.4s ease; /* Transição suave no aumento */
+    transform-origin: center; /* Define o ponto de origem da transformação para o centro */
+    margin-top: 20px; /* Adiciona margem superior para separar do conteúdo */
+}
+
+.quadrado:hover {
+    transform: scale(1.5); /* Aumenta o quadrado em 1.5 vezes ao passar o mouse */
 }
