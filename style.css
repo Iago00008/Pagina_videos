@@ -135,6 +135,16 @@ footer p {
     cursor: pointer;
 }
 
+/* Efeito de Fade no botão do segundo vídeo */
+.fade-button {
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.fade-button:hover {
+    opacity: 0.5; /* Efeito de fade ao passar o mouse */
+}
+
 /* Responsividade */
 @media (max-width: 768px) {
     header h1 {
